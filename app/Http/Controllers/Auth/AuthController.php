@@ -30,10 +30,6 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        if ($check->failed()) {
-            return redirect()->route('register')->withErrors($check);
-        }
-
         $user = User::create([
             'name' => $check['name'],
             'email' => $check['email'],
