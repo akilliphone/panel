@@ -1,5 +1,5 @@
 @extends('layouts.mini')
 
 @section('content')
-    burası dashboard content.
+    burası index content.
 @endsection
