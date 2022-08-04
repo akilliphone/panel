@@ -19,7 +19,7 @@ class AuthController extends Controller
         if (Auth::attempt($check)) {
             return redirect()->route('home');
         }
-        return redirect()->route('login');
+        return redirect()->route('login')->withErrors(['email' => 'Invalid credentials']);
     }
 
     public function register(Request $request)
@@ -30,7 +30,15 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        $user = User::create($check);
+        if ($check->failed()) {
+            return redirect()->route('register')->withErrors($check);
+        }
+
+        $user = User::create([
+            'name' => $check['name'],
+            'email' => $check['email'],
+            'password' => bcrypt($check['password']),
+        ]);
         Auth::login($user);
         return redirect()->route('home');
     }
