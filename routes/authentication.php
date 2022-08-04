@@ -18,3 +18,5 @@ Route::get('/register', function() {
 
 // Posts registration form, creates a user and logins user.
 Route::post('/registerPost', [AuthController::class, 'register'])->name('register.post');
+
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
