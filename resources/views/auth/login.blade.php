@@ -1,4 +1,3 @@
-            margin: 0;
 @extends('layouts.mini')
 @section('content')
     <main class="login-form">
