@@ -19,7 +19,7 @@ class AuthController extends Controller
         if (Auth::attempt($check)) {
             return redirect()->route('home');
         }
-        return redirect()->route('login')->withErrors(['email' => 'Invalid credentials']);
+        return redirect()->route('login')->withErrors(['message' => 'Invalid credentials']);
     }
 
     public function register(Request $request)
