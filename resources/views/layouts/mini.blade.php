@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="tr">
 <head>
-    <title>Laravel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AkıllıPanel - Giriş</title>
+    <link rel="stylesheet" href="{{ asset('assets/scss/mini.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/customError.css') }}">
 </head>
 <body>
 
-<nav>
-    {{-- <div class="container">
-        <a class="navbar-brand" href="#">Laravel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<section class="login-screen">
+    <div class="login-screen-left">
+        <div class="left-img">
+            <img src="{{ asset('assets/images/login-left.svg') }}" alt="">
+        </div>
+        <div class="content">
+            <div class="title"><span class="title-left">Akıllı</span> <span class="title-right">Panel</span>
+            </div>
+            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut
+            </div>
+        </div>
+    </div>
+    <div class="login-screen-right">
+        <div class="form-wrapper">
+            <div class="logo">
+                <img src="{{ asset('assets/images/akilliphone_logo.svg') }}" alt="logo">
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                @guest
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Register</a>
-                    </li>
-                @else
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('logout') }}">Logout</a>
-                    </li>
-                @endguest
-            </ul>
+            @yield('form')
 
         </div>
-    </div> --}}
-    Burası navigation.
-</nav>
-
-@yield('content')
-
-<footer>
-    Burası footer
-</footer>
+    </div>
+</section>
 </body>
 </html>
