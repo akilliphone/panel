@@ -72,7 +72,7 @@
   font-family: "Sen", sans-serif;
   border-radius: 10px;
   background: #FAFAFA;
-  padding: 100px 100px;
+  padding: 10px 100px;
 }
 .login-screen .login-screen-right .logo {
   width: 283px;
@@ -97,6 +97,12 @@
 }
 .login-screen .login-screen-right .footer a:hover {
   opacity: 0.8;
+}
+.login-screen .login-screen-right .alert input:focus {
+  border-left: 6px solid #ef4444 !important;
+}
+.login-screen .login-screen-right .alert input:valid {
+  border-left: 6px solid #ef4444 !important;
 }
 .login-screen .login-screen-right .group {
   position: relative;
