@@ -1,5 +1,7 @@
 @extends('layouts.mini')
 
+@section('title', 'Kayıt ol')
+
 @section('form')
     <main class="login-form">
         <div class="cotainer">

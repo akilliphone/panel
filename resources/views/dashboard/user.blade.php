@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Akıllıphone')
+
 @section('content')
     burası dashboard content.
     <table class="table table-bordered table-striped" id="data-table">
