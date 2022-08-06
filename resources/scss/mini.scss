@@ -79,7 +79,7 @@
         font-family: 'Sen', sans-serif;
         border-radius:10px;
         background: #FAFAFA;
-        padding: 100px 100px;
+        padding: 10px 100px;
         .logo{
             width: 283px;
             height: 79px;
@@ -101,6 +101,17 @@
                 text-decoration: none;
                 &:hover{
                     opacity: .8;
+                }
+            }
+        }
+
+        .alert {
+            input {
+                &:focus {
+                    border-left: 6px solid #ef4444 !important;
+                }
+                &:valid {
+                    border-left: 6px solid #ef4444 !important;
                 }
             }
         }

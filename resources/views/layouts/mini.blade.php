@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/scss/mini.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/customError.css') }}">
 </head>
 <body>
 
