@@ -1,6 +1,8 @@
 @extends('layouts.mini')
 
-@section('content')
+@section('title', 'Kayıt ol')
+
+@section('form')
     <main class="login-form">
         <div class="cotainer">
             <div class="row justify-content-center">

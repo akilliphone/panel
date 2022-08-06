@@ -1,5 +1,7 @@
 @extends('layouts.mini')
 
+@section('title', 'Giriş yap')
+
 @section('form')
     <form method="POST" action="{{ route('login.post') }}">
         @csrf
