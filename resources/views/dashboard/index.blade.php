@@ -3,4 +3,6 @@
 @section('content')
     burası dashboard content.
     {{Auth::user()}}
+
+
 @endsection
