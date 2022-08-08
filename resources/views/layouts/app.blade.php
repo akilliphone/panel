@@ -10,7 +10,6 @@
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.dataTables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons.dataTables.css') }}">
-
     <script type="text/javascript" src="{{ asset('assets/js/jquery.dataTables.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/dataTables.buttons.js') }}"></script>
 </head>

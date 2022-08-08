@@ -6,9 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Usernotnull\Toast\Concerns\WireToast;
 
 class AuthController extends Controller
 {
+
+    use WireToast;
+
     public function login(Request $request)
     {
         $check = $request->validate([
@@ -17,8 +21,10 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($check)) {
+            toast()->success('Başarıyla giriş yaptınız.', 'Giriş Başarılı')->pushOnNextPage();
             return redirect()->route('home');
         }
+        toast()->error('Geçersiz bilgiler.', 'Giriş Başarısız')->pushOnNextPage();
         return redirect()->route('login')->withErrors(['message' => 'Invalid credentials']);
     }
 
@@ -43,6 +49,7 @@ class AuthController extends Controller
     {
         Auth::logout();
         session()->flush();
+        toast()->success('Başarıyla çıkış yaptınız.', 'Çıkış Başarılı')->pushOnNextPage();
         return redirect()->route('login');
     }
 }

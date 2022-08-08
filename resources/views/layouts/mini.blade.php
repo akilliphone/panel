@@ -11,7 +11,7 @@
 <section class="login-screen">
     <div class="login-screen-left">
         <div class="left-img">
-            <img src="{{ asset('assets/images/login-left.svg') }}" alt="">
+            <img src="{{ asset('assets/images/login-left.svg') }}" alt="Akıllıphone Logo">
         </div>
         <div class="content">
             <div class="title"><span class="title-left">Akıllı</span> <span class="title-right">Panel</span>
