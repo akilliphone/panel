@@ -6,12 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Usernotnull\Toast\Concerns\WireToast;
-
 class AuthController extends Controller
 {
-
-    use WireToast;
 
     public function login(Request $request)
     {
