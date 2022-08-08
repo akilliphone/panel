@@ -25,3 +25,11 @@
         Hesabın yok mu? <a href="#">Erişim iste</a>
     </div>
 @endsection
+
+@section('scripts')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".inset-0").delay(2500).fadeOut(300);
+    });
+    </script>
+@endsection

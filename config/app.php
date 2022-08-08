@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
         Yajra\DataTables\DataTablesServiceProvider::class,
-
+        Mckenziearts\Notify\LaravelNotifyServiceProvider::class,
         /*
         *  Development Service Providers...
         */

@@ -17,8 +17,10 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($check)) {
+            notify()->success('Giriş yapıldı', 'İşlem Başarılı');
             return redirect()->route('home');
         }
+        notify()->error('Giriş yapılamadı', 'İşlem Başarısız');
         return redirect()->route('login')->withErrors(['message' => 'Invalid credentials']);
     }
 
@@ -43,6 +45,7 @@ class AuthController extends Controller
     {
         Auth::logout();
         session()->flush();
+        notify()->success('Çıkış yapıldı', 'İşlem Başarılı');
         return redirect()->route('login');
     }
 }

@@ -12,9 +12,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/buttons.dataTables.css') }}">
     <script type="text/javascript" src="{{ asset('assets/js/jquery.dataTables.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/dataTables.buttons.js') }}"></script>
+    @notifyCss
+    @notifyJs
 </head>
 
 <body>
+
+    @include('components.notify')
+
     <nav>
         Burası dashboard navigation.
     </nav>
@@ -24,6 +29,8 @@
     <footer>
         Burası dashboard footer.
     </footer>
+
+    @yield('scripts')
 </body>
 
 </html>

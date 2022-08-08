@@ -5,3 +5,7 @@
 @section('content')
     burası index content.
 @endsection
+
+@section('scripts')
+    @include('components.notifyFade')
+@endsection
