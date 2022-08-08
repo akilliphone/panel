@@ -10,6 +10,7 @@
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.dataTables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons.dataTables.css') }}">
+    <link rel="shortcut icon" href="https://www.akilliphone.com/views/kuteshop/img/favicon.png?v=9" type="image/x-icon">
     <script type="text/javascript" src="{{ asset('assets/js/jquery.dataTables.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/dataTables.buttons.js') }}"></script>
     @notifyCss

@@ -7,6 +7,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/scss/mini.css') }}">
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <link rel="shortcut icon" href="https://www.akilliphone.com/views/kuteshop/img/favicon.png?v=9" type="image/x-icon">
     @notifyCss
     @notifyJs
 </head>
