@@ -1,1 +1,0 @@
-<x:notify-messages />

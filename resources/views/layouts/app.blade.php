@@ -19,7 +19,7 @@
 
 <body>
 
-    @include('components.notify')
+    <x:notify-messages />
 
     <nav>
         Burası dashboard navigation.

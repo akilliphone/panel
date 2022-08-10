@@ -14,7 +14,7 @@
 
 <body>
 
-    @include('components.notify')
+    <x:notify-messages />
 
     <section class="login-screen">
         <div class="login-screen-left">
