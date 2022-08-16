@@ -5,6 +5,12 @@
 @section('form')
     <form method="POST" action="{{ route('login.post') }}">
         @csrf
+        @foreach($errors->all() as $error)
+            <div>
+                {{ $error }}
+            </div>
+        @endforeach
+
         <div class="{{ $errors->all() ? "group alert" : "group" }}">
             <input class="dynPut" type="mail" name="email" required>
             <label>Email</label>
