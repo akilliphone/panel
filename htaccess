@@ -1,0 +1,11 @@
+### Rewrite Rules Added by CyberPanel Rewrite Rule Generator
+
+	RewriteEngine On
+	RewriteCond %{HTTPS}  !=on
+	RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+	### End CyberPanel Generated Rules.
+	AddHandler application/x-httpd-php74  .php .phtml
+	<IfModule mod_rewrite.c>
+	RewriteRule ^(.*)$ public/$1 [L]
+	</IfModule>
